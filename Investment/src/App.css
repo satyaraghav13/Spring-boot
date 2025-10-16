@@ -1,0 +1,13 @@
+Body{
+padding: 0px;
+margin: 0px;
+background-color: white;
+color: black;
+}
+
+.Header-container{
+ display: flex;
+ justify-content:space-between;
+ 
+}
+
