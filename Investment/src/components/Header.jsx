@@ -1,19 +1,30 @@
 import { GiHamburgerMenu } from "react-icons/gi";
-import { Link } from "react-router-dom";
-
+import { useState } from "react";
+import Sidebar from "./Sidebar";
+import { IoLogOut } from "react-icons/io5";
+import LogOut from "./LogOut";
 
 
 function Header() {
-return (
-    <header>
-  <div className="Header-container">
-        <Link to="HamburgerMenu.jsx"><span><GiHamburgerMenu /></span></Link>
-        <span>
-            <h2 className="Headercolor">Invest Once , Earn Every Month</h2>
+  const [isOpen, setIsOpen] = useState(false);
+
+  return (
+    <>
+      <header className="header">
+        <span className="hamburger" onClick={() => setIsOpen(true)}>
+          <GiHamburgerMenu size={26} />
         </span>
-    </div>
-    </header>
-)
+        <h2>Invest Once, Earn Every Month</h2>
+
+        <LogOut/> 
+      </header>
+
+      <Sidebar isOpen={isOpen} onClose={() => setIsOpen(false)} />
+
+        
+      
+    </>
+  );
 }
 
-export default Header
+export default Header;
