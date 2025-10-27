@@ -147,11 +147,21 @@ color: black;
   margin-top: 5px;
 }
 
+.nav-links ul {
+   
+   display: flex;
+    gap: 20px;
+    list-style: none;
+    text-decoration: none;
+    font-size: 18px;
 
+}
 
-
-
-
+.nav-links ul li a {
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+}
 
 
 

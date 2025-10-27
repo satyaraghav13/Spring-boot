@@ -7,6 +7,7 @@ import { IoSettings } from "react-icons/io5";
 import { MdRoundaboutRight } from "react-icons/md";
 import { TbClock24 } from "react-icons/tb";
 import { MdIosShare } from "react-icons/md";
+import { SiGnuprivacyguard } from "react-icons/si";
 
 
 function Sidebar({ isOpen, onClose }) {
@@ -31,8 +32,8 @@ function Sidebar({ isOpen, onClose }) {
           <ul>
             <li><Link to="/Verification"   onClick={onClose}  > <i><MdVerified /></i> Verification</Link></li>
             <li><Link to="/Setting" onClick={onClose}>  <i><IoSettings /> </i> Setting</Link></li>
-            <li><Link to="/About" onClick={onClose}>  <i><MdRoundaboutRight /> </i>About</Link></li>
-            <li><Link to="/LiveChat" onClick={onClose}>  <i><TbClock24 /> </i>LiveChat</Link></li>
+            <li><Link to="/About" onClick={onClose}>  <i><MdRoundaboutRight /> </i>About Us</Link></li>
+            <li><Link to="/SecuritySetting" onClick={onClose}>  <i><SiGnuprivacyguard /> </i>Security</Link></li>
             <li><Link to="/Refferal" onClick={onClose}>  <i><MdIosShare /> </i>Refferal</Link></li>
           </ul>
         </div>

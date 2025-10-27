@@ -68,3 +68,61 @@
 .kyc-button:hover {
   background: #0056b3;
 }
+
+
+
+
+ .settings-container {
+      max-width: 450px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    h1 {
+      font-size: 28px;
+      font-weight: 600;
+      margin-bottom: 20px;
+    }
+
+    .section {
+      margin-top: 25px;
+    }
+
+    .section-title {
+      font-size: 14px;
+      text-transform: uppercase;
+      color: #9ca3af;
+      margin-bottom: 8px;
+    }
+
+    .setting-item {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      
+      padding: 14px 16px;
+      border-radius: 10px;
+      margin-bottom: 10px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .setting-item:hover {
+      background-color: #374151;
+    }
+
+    .setting-label {
+      font-size: 16px;
+      color: #e5e7eb;
+    }
+
+    .setting-value {
+      font-size: 14px;
+      color: #9ca3af;
+    }
+
+    .arrow {
+      font-weight: bold;
+      color: #6b7280;
+      margin-left: 8px;
+    }
