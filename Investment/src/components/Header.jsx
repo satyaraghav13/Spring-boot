@@ -21,7 +21,6 @@ function Header() {
         <HeaderMenu/>
        
         <h2>OneTouch</h2>
-
         <LogOut/> 
       </header>
 

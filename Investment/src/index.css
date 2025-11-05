@@ -126,3 +126,96 @@
       color: #6b7280;
       margin-left: 8px;
     }
+
+
+
+
+/* .Log_in */
+     .main {
+            background: rgba(203, 196, 196, 0.599);
+            padding: 40px;
+            border-radius: 10px;
+            width: 350px;
+            box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.2);
+            text-align: center;
+        }
+
+        .Log_in{
+            margin-bottom: 10px;
+        }
+
+        .inbox {
+            margin: 15px 0;
+            text-align: left;
+        }
+
+        .inbox input {
+            width: 100%;
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px;
+            outline: none;
+        }
+
+        .forget {
+            display: flex;
+            justify-content: space-between;
+            font-size: 14px;
+            margin: 10px 0;
+        }
+
+        .bttn {
+            width: 100%;
+            background: rgb(56, 56, 79);
+            color: white;
+            padding: 12px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .bttn:hover {
+            background: rgb(118, 110, 110);
+        }
+
+        .other-bttn {
+            margin-top: 15px;
+            padding: 10px;
+            width: 100%;
+            border: 1px solid;
+            border-radius: 5px;
+            background: rgb(136, 134, 134);
+            cursor: pointer;
+        }
+
+        .other-bttn:hover {
+            background-color: rgb(118, 110, 110);
+            ;
+        }
+
+        .signup {
+            margin-top: 15px;
+            font-size: 14px;
+        }
+
+        .signup a {
+            text-decoration: none;
+            color: blue;
+            font-weight: bold;
+        }
+         .EmailMobile{
+            display: flex;
+         }
+
+        .EmailMobile a{
+            color: black;
+            text-decoration: none;
+            margin: 5px;    
+        }
+      .btnEmail:hover{
+          background: rgba(203, 196, 196, 0.599); 
+        }
+     .btnNumber:hover{
+          background: rgba(203, 196, 196, 0.599); 
+        }
