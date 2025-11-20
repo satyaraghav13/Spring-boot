@@ -1,9 +1,10 @@
+import { FaGoogle } from "react-icons/fa6";
 
+import { Link } from "react-router-dom";
 
 function Login() {
 
     return (
-
 
 
     <div className="main">
@@ -12,30 +13,28 @@ function Login() {
 
         <form action="Login" method="post">
             
-           <div className="EmailMobile">
-            <span className="btnEmail"><a href="email.html">Email</a></span>
-             <span className="btnNumber"><a href="Mobile.html">Mobile Number</a></span>
-           </div>
+       
             <div className="inbox">
-                <input type="text" placeholder="Email id" name="email"/>
+                <input type="text" placeholder="Email id/Phone No." name="email" required/>
             </div>
 
 
             <div className="inbox">
-                <input type="password" placeholder="Password" name="password"/>
+                <input type="password" placeholder="Password" name="password" required/>
             </div>
 
 
             <div className="forget">
                 <label><input type="checkbox"/> Remember me</label>
-                <a href="ForgotPassword.html">Forgot Password?</a>
+                {/* <a href="ForgotPassword.html">Forgot Password?</a> */}
+                <Link to="/forgetPassword" >Forgot Password?</Link>
             </div>
 			
             <button   type="submit" className="bttn">Sign in</button>
            
                <p>Or Sign Up With</p>
-            <a href=""><span><i className="fa-brands fa-google"></i></span></a>
-            <div className="signup">Don't have an account? <a href="Index.html">Sign Up</a>
+            <a href=""><span><i className="fa-brands fa-google"><FaGoogle /></i></span></a>
+            <div className="signup">Don't have an account? <Link to="/signUp" >Sign Up</Link>
             </div>
         </form>
     </div>

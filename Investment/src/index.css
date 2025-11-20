@@ -135,9 +135,11 @@
             background: rgba(203, 196, 196, 0.599);
             padding: 40px;
             border-radius: 10px;
-            width: 350px;
+            width: 500px;
             box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.2);
             text-align: center;
+            margin: auto;
+            margin-top: 60px;
         }
 
         .Log_in{
@@ -218,4 +220,47 @@
         }
      .btnNumber:hover{
           background: rgba(203, 196, 196, 0.599); 
+     }
+
+    /* .signup */
+
+
+        h2 {
+            margin-bottom: 10px;
         }
+
+        .inbox {
+            margin: 15px 0;
+            text-align: left;
+        }
+
+        .inbox input {
+            width: 100%;
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            outline: none;
+        }
+
+        .forget {
+            display: flex;
+            justify-content: space-between;
+            font-size: 14px;
+            margin: 10px 0;
+        }
+
+        .bttn {
+            width: 100%;
+            background: rgb(56, 56, 79);
+            color: white;
+            padding: 12px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .bttn:hover {
+            background: rgb(118, 110, 110);
+        }
+

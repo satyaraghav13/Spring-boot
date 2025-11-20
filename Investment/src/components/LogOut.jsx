@@ -9,10 +9,8 @@ function LogOut () {
         <div className="nav-links">
                  
                  <ul>
-                   <li><Link to="/LogOut" >Login</Link></li>
-                  <li><Link to="/L" >Logout</Link></li>
-                   
-                   
+                   <li><Link to="/Login" >Login</Link></li>
+                  <li><Link to="/Logout" >Logout</Link></li> 
                  </ul>
                </div>
 )

@@ -1,3 +1,6 @@
+import { useIsOpen } from "../context/IsOpenProvider";
+
+
 import { GiHamburgerMenu } from "react-icons/gi";
 import { useState } from "react";
 import Sidebar from "./Sidebar";
@@ -9,21 +12,21 @@ import "../App.css";
 
 
 function Header() {
-  const [isOpen, setIsOpen] = useState(false);
-
+  // const [isOpen, setIsOpen] = useState(false);
+  const { isOpen, setIsOpen } = useIsOpen();
   return (
     <>
       <header className="header">
-        <span className="hamburger" onClick={() => setIsOpen(true)}>
+            <span className="hamburger" onClick={() => setIsOpen(true)}>
           <GiHamburgerMenu size={26} />
-        </span>
-
+            </span>
         <HeaderMenu/>
        
         <h2>OneTouch</h2>
-        <LogOut/> 
-      </header>
 
+        <LogOut /> 
+
+      </header>
       <Sidebar isOpen={isOpen} onClose={() => setIsOpen(false)} />
 
         
