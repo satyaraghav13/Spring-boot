@@ -1,54 +1,92 @@
+import "bootstrap/dist/css/bootstrap.min.css";
+
 function SecuritySetting() {
-return (
-<>
+  return (
+    <div
+      className="container py-4"
+      style={{ background: "#0b0e11", minHeight: "100vh"  ,maxWidth :"100%" , color: "white" }}
+    >
+      <div className="row justify-content-center">
+        <div className="col-lg-6 col-md-8">
 
-  <h2>🔐 Security Settings</h2>
+          <h3 className="fw-bold mb-4 text-center">Security Settings</h3>
 
+         
+          <div className="card bg-dark text-light p-4 shadow border-secondary mb-4">
+            <h5 className="text-warning">Change Password</h5>
 
-  <form className="kyc-form" action="#" method="post">
-    <fieldset>
-      <legend>Change Password</legend>
+            <div className="mt-3">
+              <label className="form-label text-muted">Old Password</label>
+              <input
+                type="password"
+                className="form-control bg-White border-secondary text-light"
+                  placeholder="Old Password"
+                  required
+              />
+            </div>
 
-      <label  className="kyc-label">Old Password:</label>
-      <input type="password" id="oldPassword" name="oldPassword"/>
+            <div className="mt-3">
+              <label className="form-label text-muted">New Password</label>
+              <input
+                type="password"
+                className="form-control bg-White  border-secondary text-light"
+                
+                  placeholder="New Password"
+                  required
+              />
+            </div>
 
-      <label  className="kyc-label">New Password:</label>
-      <input type="password" id="newPassword" name="newPassword"/>
+            <div className="mt-3">
+              <label className="form-label text-muted">Confirm Password</label>
+              <input
+                type="password"
+                className="form-control bg-White  border-secondary text-light"
+                  placeholder="Confirm New Password"
+                  required
+              />
+            </div>
 
-      <label  className="kyc-label">Confirm Password:</label>
-      <input type="password" id="confirmPassword" name="confirmPassword"/>
+            <button className="btn btn-warning w-100 mt-4 fw-bold">
+              Update Password
+            </button>
+          </div>
 
-      <button type="submit">Update Password</button>
-    </fieldset>
-  </form>
+         
+          <div className="card bg-dark text-light p-4 shadow border-secondary mb-4">
+            <h5 className="text-warning">Two-Factor Authentication (2FA)</h5>
 
-  <hr />
+            <div className="form-check mt-3">
+              <input
+                className="form-check-input"
+                type="checkbox"
+                id="2fa-check"
+              />
+              <label className="form-check-label" htmlFor="2fa-check">
+                Enable 2FA (via OTP)
+              </label>
+            </div>
 
-  <form className="kyc-form" action="#" method="post">
-    <fieldset>
-      <legend>Two-Factor Authentication (2FA)</legend>
+            <button className="btn btn-primary w-100 mt-4 fw-bold">
+              Save Settings
+            </button>
+          </div>
 
-      <label  className="kyc-label">Enable 2FA (via OTP):</label>
-      <input type="checkbox" id="enable2fa" name="enable2fa"/>
+         
+          <div className="card bg-dark text-light p-4 shadow border-secondary mb-4">
+            <h5 className="text-warning">Logout from All Devices</h5>
+            <p className="text-muted mt-2">
+              Click the button below to log out from all active sessions.
+            </p>
 
-      <button type="submit">Save Settings</button>
-    </fieldset>
-  </form>
+            <button className="btn btn-danger w-100 fw-bold">
+              Logout All Devices
+            </button>
+          </div>
 
-  <hr />
+        </div>
+      </div>
+    </div>
+  );
+}
 
- 
-  <form className="kyc-form" action="#" method="post">
-    <fieldset>
-      <legend>Logout from All Devices</legend>
-
-      <p>Click below to log out from all active sessions.</p>
-      <button type="submit">Logout All Devices</button>
-    </fieldset>
-  </form>
-
-</>
-)
-};
-
-export default SecuritySetting
+export default SecuritySetting;

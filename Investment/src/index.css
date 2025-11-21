@@ -17,13 +17,13 @@
 
 /* Each input section */
 .form-group {
-  margin-bottom: 20px; /* 👈 gap between each field */
+  margin-bottom: 20px; 
 }
 
 /* Label styling */
 .kyc-label {
   display: block;
-  margin-bottom: 8px; /* 👈 small gap between label and input */
+  margin-bottom: 8px;
   font-weight: bold;
   color: #333;
   font-size: 15px;

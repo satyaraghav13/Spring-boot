@@ -21,8 +21,14 @@ import SignUp from "./components/SignUp";
 import ForgetNumber from "./components/ForgetNumber";
 import ForgetEmail from "./components/ForgetEmail";
 import ForgetPassword from "./components/ForgetPassword";
+
+
+import HelpSupport from "./components/HelpSupport";
+
+import { PortfolioProvider } from "./context/PortfolioContext";
 function App() {
   return (
+    <PortfolioProvider>
     <IsOpenProvider>
       <BrowserRouter>
         <Header />
@@ -40,6 +46,7 @@ function App() {
           <Route path="/about" element={<About />} />
           <Route path="/securitysetting" element={<SecuritySetting />} />
           <Route path="/refferal" element={<Refferal />} />
+          <Route path="/helpsupport" element={<HelpSupport />} />
 
           <Route path="/login" element={<Login />} />
           <Route path="/logout" element={<Logout />} />
@@ -49,9 +56,11 @@ function App() {
           <Route path="/forgetPassword" element={<ForgetPassword />} />
           <Route path="/forgetNumber" element={<ForgetNumber />} />
           <Route path="/forgetEmail" element={< ForgetEmail />} />
+      
         </Routes>
       </BrowserRouter>
     </IsOpenProvider>
+    </PortfolioProvider>
   );
 }
 

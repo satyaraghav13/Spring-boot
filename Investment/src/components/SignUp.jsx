@@ -9,7 +9,7 @@ function SignUp() {
         <h2>Register</h2>
         <p>Welcome to OneTouch</p>
 
-        {/* <!-- Fixed parameter names --> */}
+        {/*Fixed parameter names */}
         <form action="Save" method="post">
             
 
