@@ -26,6 +26,8 @@ import ForgetPassword from "./components/ForgetPassword";
 import HelpSupport from "./components/HelpSupport";
 
 import { PortfolioProvider } from "./context/PortfolioContext";
+import TermsService from "./components/TermsService";
+import PrivacyPolicy from "./components/PrivacyPolicy";
 function App() {
   return (
     <PortfolioProvider>
@@ -56,6 +58,9 @@ function App() {
           <Route path="/forgetPassword" element={<ForgetPassword />} />
           <Route path="/forgetNumber" element={<ForgetNumber />} />
           <Route path="/forgetEmail" element={< ForgetEmail />} />
+
+          <Route path="/TermsService" element={< TermsService />} />
+          <Route path="/PrivacyPolicy" element={< PrivacyPolicy />} />
       
         </Routes>
       </BrowserRouter>
