@@ -1,100 +1,3 @@
-
-// import { FaGoogle } from "react-icons/fa6";
-// import { Link, useNavigate } from "react-router-dom";
-// import { useState } from "react";
-
-
-
-
-// function Login() {
-//   const navigate = useNavigate();
-
-//   const [email, setEmail] = useState("");
-//   const [password, setPassword] = useState("");
-
-//   const handleLogin = async (e) => {
-//     e.preventDefault();
-
-//     const data = { email, password };
-
-//     try {
-//       const response = await fetch("http://localhost:8080/loginUser", {
-//         method: "POST",
-//         headers: { "Content-Type": "application/json" },
-//         body: JSON.stringify(data),
-//       });
-
-//       if (response.ok) {
-//         alert("Login Successful!");
-
-//         localStorage.setItem("auth", "true");     
-//         // 🔥 Redirect to Home Page
-//         navigate("/home");
-//       } else {
-//         alert("Invalid Email or Password!");
-//       }
-//     } catch (error) {
-//       alert("Server not responding!");
-//     }
-//   };
-
-//   return (
-//     <div className="main">
-//       <h2 className="Log_in">Sign in</h2>
-//       <p>Invest Once, Earn Every Month</p>
-
-//       <form onSubmit={handleLogin}>
-//         <div className="inbox">
-//           <input
-//             type="text"
-//             placeholder="Email id / Phone No."
-//             required
-//             value={email}
-//             onChange={(e) => setEmail(e.target.value)}
-//           />
-//         </div>
-
-//         <div className="inbox">
-//           <input
-//             type="password"
-//             placeholder="Password"
-//             required
-//             value={password}
-//             onChange={(e) => setPassword(e.target.value)}
-//           />
-//         </div>
-
-//         <div className="forget">
-//           <label>
-//             <input type="checkbox" /> Remember me
-//           </label>
-
-//           <Link to="/forgetPassword">Forgot Password?</Link>
-//         </div>
-
-//         <button type="submit" className="bttn">Sign in</button>
-
-//         <p>Or Sign in With</p>
-//         <span><FaGoogle size={22} /></span>
-
-//         <div className="signup">
-//           Don't have an account? <Link to="/signUp">Sign Up</Link>
-//         </div>
-//       </form>
-//     </div>
-//   );
-// }
-
-// export default Login;
-
-
-
-
-
-
-
-
-
 import { useState } from "react";
 import { useNavigate, Link } from "react-router-dom";
 import { FaGoogle } from "react-icons/fa6";
@@ -126,7 +29,6 @@ function Login() {
     }
   };
 
-
   return (
     <div className="main">
       <h2 className="Log_in">Sign in</h2>
@@ -155,16 +57,20 @@ function Login() {
 
         <div className="forget">
           <label>
-            <input type="checkbox" /> Remember me
+            <input type="checkbox" required/> Remember me
           </label>
 
           <Link to="/forgetPassword">Forgot Password?</Link>
         </div>
 
-        <button type="submit" className="bttn">Sign in</button>
+        <button type="submit" className="bttn">
+          Sign in
+        </button>
 
         <p>Or Sign in With</p>
-        <span><FaGoogle size={22} /></span>
+        <span>
+          <FaGoogle size={22} />
+        </span>
 
         <div className="signup">
           Don't have an account? <Link to="/signUp">Sign Up</Link>
@@ -175,20 +81,3 @@ function Login() {
 }
 
 export default Login;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
